@@ -14,7 +14,6 @@ firebase.initializeApp({
 
 // Local Database Access
 var ref = firebase.database().ref("Alexa");
-
 var name = './photo/image.jpg';
 
 /* The Raspberry Pi is always listening to the database to see if voice commands to Alexa are issued */
@@ -67,8 +66,8 @@ ref.on("child_changed", function(snap) {
         url: 'https://api.kairos.com/enroll',
         headers:{
           'Content-Type': 'application/json',
-          'app_id': '<KairosAppID>',
-          'app_key': '<KairosAppKey>'
+          'app_id': '10edb81f',
+          'app_key': '2c67375bfb5d90348383baf0d8677815'
         },
         body: JSON.stringify({
           image: base64data,                            //Uses the previously taken picture of the person's face to train
