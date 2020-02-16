@@ -1,9 +1,9 @@
 var APP_ID = 'amzn1.ask.skill.3499bc02-e803-4d43-8ea1-1e5f8337418d';
 
 /* Include skill, Alexa responses, and DB logic files */
-var AlexaSkill = require('./AlexaSkill.js');
-var Responses = require('./responses.js');
-var Database = require('./database.js');
+var AlexaSkill = require('AlexaSkill.js');
+var Responses = require('responses.js');
+var Database = require('database.js');
 
 var database = new Database()
 
